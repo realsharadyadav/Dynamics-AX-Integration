@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="19d16e62-1040-4ca5-951e-9afbc15ba831" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://litdev01638b941a282a7c8fdevaos.cloudax.dynamics.com/soap/services/cnaABRMIntegrationServiceGroup?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="cnaABRMIntegrationServiceGroup.xsd" MetadataType="Schema" ID="2c2d1af4-9274-417d-9422-0e6cd0b68390" SourceId="1" SourceUrl="https://litdev01638b941a282a7c8fdevaos.cloudax.dynamics.com/soap/services/cnaABRMIntegrationServiceGroup?xsd=xsd2" />
+    <MetadataFile FileName="cnaABRMIntegrationServiceGroup1.xsd" MetadataType="Schema" ID="0154cef1-b736-45e4-a333-4dac53bd43ea" SourceId="1" SourceUrl="https://litdev01638b941a282a7c8fdevaos.cloudax.dynamics.com/soap/services/cnaABRMIntegrationServiceGroup?xsd=xsd3" />
+    <MetadataFile FileName="cnaABRMIntegrationServiceGroup2.xsd" MetadataType="Schema" ID="29e01359-57cb-4dbe-ae0d-eeaf976a7892" SourceId="1" SourceUrl="https://litdev01638b941a282a7c8fdevaos.cloudax.dynamics.com/soap/services/cnaABRMIntegrationServiceGroup?xsd=xsd0" />
+    <MetadataFile FileName="cnaABRMIntegrationServiceGroup3.xsd" MetadataType="Schema" ID="b2f169a1-4456-476b-b93a-42d54861feef" SourceId="1" SourceUrl="https://litdev01638b941a282a7c8fdevaos.cloudax.dynamics.com/soap/services/cnaABRMIntegrationServiceGroup?xsd=xsd1" />
+    <MetadataFile FileName="cnaABRMIntegrationServiceGroup4.xsd" MetadataType="Schema" ID="49e69085-728c-4640-920b-933538fef8d1" SourceId="1" SourceUrl="https://litdev01638b941a282a7c8fdevaos.cloudax.dynamics.com/soap/services/cnaABRMIntegrationServiceGroup?xsd=xsd6" />
+    <MetadataFile FileName="cnaABRMIntegrationServiceGroup5.xsd" MetadataType="Schema" ID="14de6f72-3233-4053-96de-200767e056fa" SourceId="1" SourceUrl="https://litdev01638b941a282a7c8fdevaos.cloudax.dynamics.com/soap/services/cnaABRMIntegrationServiceGroup?xsd=xsd4" />
+    <MetadataFile FileName="cnaABRMIntegrationServiceGroup6.xsd" MetadataType="Schema" ID="d00dccdf-293c-4f52-8c0b-7b080a42da48" SourceId="1" SourceUrl="https://litdev01638b941a282a7c8fdevaos.cloudax.dynamics.com/soap/services/cnaABRMIntegrationServiceGroup?xsd=xsd5" />
+    <MetadataFile FileName="cnaABRMIntegrationServiceGroup.wsdl" MetadataType="Wsdl" ID="a4b45831-9ed7-47c7-a8aa-0ef1ec13655f" SourceId="1" SourceUrl="https://litdev01638b941a282a7c8fdevaos.cloudax.dynamics.com/soap/services/cnaABRMIntegrationServiceGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="cnaABRMIntegrationServiceGroup1.wsdl" MetadataType="Wsdl" ID="bd908a5d-2fc2-4a31-99f1-7eba884317c0" SourceId="1" SourceUrl="https://litdev01638b941a282a7c8fdevaos.cloudax.dynamics.com/soap/services/cnaABRMIntegrationServiceGroup?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

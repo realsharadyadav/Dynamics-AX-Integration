@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://litdev01638b941a282a7c8fdevaos.cloudax.dynamics.com/soap/services/cnaABRMIntegrationServiceGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfcnaABRMValidationContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="cnaABRMValidationContract" nillable="true" type="tns:cnaABRMValidationContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfcnaABRMValidationContract" nillable="true" type="tns:ArrayOfcnaABRMValidationContract" />
+  <xs:complexType name="cnaABRMValidationContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="center" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="department" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="mainAccount" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="purpose" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="transactionDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="cnaABRMValidationContract" nillable="true" type="tns:cnaABRMValidationContract" />
+  <xs:complexType name="cnaABRMResultContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="success" type="q2:NoYes" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="cnaABRMResultContract" nillable="true" type="tns:cnaABRMResultContract" />
+  <xs:complexType name="cnaABRMLedgerJournalTableContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q3:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="center" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="cnaABRMTransBatch" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="cnaABRMTransSource" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="cnaABRMTransType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="department" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="purpose" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="cnaABRMLedgerJournalTableContract" nillable="true" type="tns:cnaABRMLedgerJournalTableContract" />
+  <xs:complexType name="ArrayOfcnaABRMLedgerJournalTransContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="cnaABRMLedgerJournalTransContract" nillable="true" type="tns:cnaABRMLedgerJournalTransContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfcnaABRMLedgerJournalTransContract" nillable="true" type="tns:ArrayOfcnaABRMLedgerJournalTransContract" />
+  <xs:complexType name="cnaABRMLedgerJournalTransContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q4:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="accountNum" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="accountType" type="tns:LedgerJournalACType" />
+          <xs:element minOccurs="0" name="amountCurCredit" type="xs:decimal" />
+          <xs:element minOccurs="0" name="amountCurDebit" type="xs:decimal" />
+          <xs:element minOccurs="0" name="center" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="cnaABRMTransText" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="department" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="documentDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="documentNum" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="invoice" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="offsetAccount" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="offsetAccountType" type="tns:LedgerJournalACType" />
+          <xs:element minOccurs="0" name="offsetCompany" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="offsetTxt" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="paymentReference" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="purpose" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="transDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="txt" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="cnaABRMLedgerJournalTransContract" nillable="true" type="tns:cnaABRMLedgerJournalTransContract" />
+  <xs:simpleType name="LedgerJournalACType">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:element name="LedgerJournalACType" nillable="true" type="tns:LedgerJournalACType" />
+</xs:schema>

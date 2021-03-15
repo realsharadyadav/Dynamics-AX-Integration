@@ -25,7 +25,7 @@ namespace AuthenticationUtility
             string aadClientAppSecret = ClientConfiguration.Default.ActiveDirectoryClientAppSecret;
             string aadResource = ClientConfiguration.Default.ActiveDirectoryResource;
 
-            AuthenticationContext authenticationContext = new AuthenticationContext(aadTenant, false);
+            AuthenticationContext authenticationContext = new AuthenticationContext(aadTenant);
             AuthenticationResult authenticationResult;
 
             if (useWebAppAuthentication)

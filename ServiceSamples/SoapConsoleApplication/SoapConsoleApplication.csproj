@@ -75,12 +75,50 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\CnaAbrmIntigrationServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Connected Services\CnaAbrmIntigrationServiceReference\cnaABRMIntegrationServiceGroup.wsdl" />
+    <None Include="Connected Services\CnaAbrmIntigrationServiceReference\cnaABRMIntegrationServiceGroup.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CnaAbrmIntigrationServiceReference\cnaABRMIntegrationServiceGroup1.wsdl" />
+    <None Include="Connected Services\CnaAbrmIntigrationServiceReference\cnaABRMIntegrationServiceGroup1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CnaAbrmIntigrationServiceReference\cnaABRMIntegrationServiceGroup2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CnaAbrmIntigrationServiceReference\cnaABRMIntegrationServiceGroup3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CnaAbrmIntigrationServiceReference\cnaABRMIntegrationServiceGroup4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CnaAbrmIntigrationServiceReference\cnaABRMIntegrationServiceGroup5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CnaAbrmIntigrationServiceReference\cnaABRMIntegrationServiceGroup6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CnaAbrmIntigrationServiceReference\SoapConsoleApplication.CnaAbrmIntigrationServiceReference.cnaABRMResultContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\CnaAbrmIntigrationServiceReference\SoapConsoleApplication.CnaAbrmIntigrationServiceReference.PostJournalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\CnaAbrmIntigrationServiceReference\SoapConsoleApplication.CnaAbrmIntigrationServiceReference.ValidateDateDimensionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\SoapUtility.UserSessionServiceReference.Infolog.datasource" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AuthenticationUtility\AuthenticationUtility.csproj">
@@ -91,6 +129,24 @@
       <Project>{1dbab883-bab6-4433-8eab-6e197634f158}</Project>
       <Name>SoapUtility</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\CnaAbrmIntigrationServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\CnaAbrmIntigrationServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\CnaAbrmIntigrationServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\CnaAbrmIntigrationServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
